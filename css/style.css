@@ -1,115 +1,24 @@
-/* Styles pour le contenu de l'en-tête */
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-/* Styles pour le nom du blog */
-h1 {
-    margin: 0;
-}
-
-/* Styles pour la navigation */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333; /* Couleur du texte pour les liens de navigation */
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Styles spécifiques à la page d'accueil */
-.hero {
-    background-image: url('images/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    padding: 100px 20px;
-    text-align: center;
-}
-
-.hero h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 40px;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #45a049;
-}
-
-.article-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.article {
-    width: calc(50% - 20px);
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.article img {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.article h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.article p {
-    margin-top: 0;
-}
-
-/* Styles généraux */
+/* Style général */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Style de l'en-tête */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #333; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
     padding: 20px;
 }
 
-header h1 {
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content h1 {
     margin: 0;
 }
 
@@ -121,28 +30,140 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #fff;
+    padding: 10px;
+    transition: background-color 0.3s ease; /* Transition au survol */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #555; /* Couleur de fond au survol */
 }
 
-main {
+nav ul li a.active {
+    border-bottom: 2px solid #fff; /* Bordure en bas pour l'élément actif */
+}
+
+/* Style de la bannière */
+.hero {
+    background-image: url('images/banner.jpg'); /* Image de fond */
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0; /* Espacement haut et bas */
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Style des articles */
+.article-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0; /* Espacement haut et bas */
+}
+
+.article {
+    width: 30%; /* Largeur des articles */
     padding: 20px;
+    border: 1px solid #ccc; /* Bordure */
 }
 
+.article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
 
+.article h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
 
-/* footer style*/
+.article p {
+    font-size: 16px;
+}
+
+/* Style de l'article en vedette */
+.featured-article {
+    background-color: #f9f9f9; /* Couleur de fond */
+    padding: 50px;
+    text-align: center;
+}
+
+.featured-article h2 {
+    margin-bottom: 20px;
+}
+
+.featured-article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.featured-article h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.featured-article p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Style des derniers articles */
+.latest-articles {
+    padding: 50px;
+    background-color: #f9f9f9; /* Couleur de fond */
+}
+
+.latest-articles h2 {
+    margin-bottom: 20px;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Grille flexible */
+    gap: 20px; /* Espacement entre les articles */
+}
+
+.article {
+    padding: 20px;
+    background-color: #fff; /* Couleur de fond des articles */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.article h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.article p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Style du footer */
 footer {
     background-color: #333;
     color: #fff;
+    background-color: #333; /* Couleur de fond */
+    color: #fff; /* Couleur du texte */
     padding: 20px;
 }
 
@@ -154,6 +175,7 @@ footer {
 
 .footer-content p {
     margin: 0;
+    text-align: center;
 }
 
 .social-links {
@@ -165,11 +187,14 @@ footer {
 .social-links li {
     display: inline-block;
     margin-right: 10px;
+    display: inline;
+    margin: 0 10px;
 }
 
 .social-links li a {
     color: #fff;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .social-links li a:hover {
