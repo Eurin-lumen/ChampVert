@@ -3,27 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Accueil - ChampVert</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- Lien vers le fichier CSS externe -->
 </head>
 <body>
+
     <header>
-        <h1>ChampVert</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="presentation.html">Présentation</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <h1>ChampVert</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">Présentation</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
         <section class="hero">
             <h2>Bienvenue sur ChampVert</h2>
             <p>Découvrez toute la richesse de la culture à travers notre blog.</p>
             <a href="blog.html" class="btn">Explorer le blog</a>
         </section>
+
+
         <section class="article-container">
             <div class="article">
                 <img src="images/article1.jpg" alt="Article 1">
@@ -39,7 +46,40 @@
             </div>
             <!-- Ajoutez autant d'articles que nécessaire -->
         </section>
+
+        <section class="featured-article">
+            <h2>Article en vedette</h2>
+            <article>
+                <img src="images/featured-article.jpg" alt="Article en vedette">
+                <h3>Titre de l'article en vedette</h3>
+                <p>Description de l'article en vedette</p>
+            </article>
+        </section>
+
+        <section class="latest-articles">
+            <h2>Derniers articles</h2>
+            <div class="article-grid">
+                <article>
+                    <img src="images/article1.jpg" alt="Article 1">
+                    <h3>Titre de l'article</h3>
+                    <p>Description de l'article</p>
+                </article>
+                <article>
+                    <img src="images/article2.jpg" alt="Article 2">
+                    <h3>Titre de l'article</h3>
+                    <p>Description de l'article</p>
+                </article>
+                <article>
+                    <img src="images/article3.jpg" alt="Article 3">
+                    <h3>Titre de l'article</h3>
+                    <p>Description de l'article</p>
+                </article>
+                <!-- Ajoutez plus d'articles ici -->
+            </div>
+        </section>
     </main>
+
+
     <footer>
         <div class="footer-content">
             <p>Créé par ACODJI Fabiola</p>

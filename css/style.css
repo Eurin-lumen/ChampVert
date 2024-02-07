@@ -1,3 +1,36 @@
+/* Styles pour le contenu de l'en-tête */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Styles pour le nom du blog */
+h1 {
+    margin: 0;
+}
+
+/* Styles pour la navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Couleur du texte pour les liens de navigation */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
 
 /* Styles spécifiques à la page d'accueil */
 .hero {
