@@ -1,0 +1,54 @@
+
+/*code de la banniere*/
+.presentation {
+    background-image: url('images/fraisebio.jpg');
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 200px 0; /* Espacement haut et bas */
+}
+
+
+/* Style de la section de présentation */
+.presentation-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: justify;
+    border-bottom: 1px solid #ccc; /* Ligne de séparation */
+}
+
+.presentation-section h2 {
+    margin-bottom: 20px;
+}
+
+.presentation-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Style de la section Vision et Mission */
+.vision-mission {
+    padding: 50px;
+    background-color: #fff;
+    text-align: justify;
+}
+
+.vision-mission h2 {
+    margin-bottom: 20px;
+}
+
+.vision, .mission {
+    margin-bottom: 30px;
+}
+
+.vision h3, .mission h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.vision p, .mission p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
