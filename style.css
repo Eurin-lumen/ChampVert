@@ -86,15 +86,13 @@ nav ul li a.active {
 
 /* Style des articles */
 .article-container {
-    display: flex;
-    justify-content:space-around;
+    display: grid; /* Utilisation de Grid */
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes égales */
+    grid-gap: 20px; /* Espacement entre les articles */
     margin: 40px 0; /* Espacement haut et bas */
-    
 }
 
 .article {
-  width: calc(33.33% - 20px);   /* Largeur des articles avec marges */
-
     padding: 20px;
     border-radius: 10px;
     background-color: #f9f9f9;
@@ -102,6 +100,9 @@ nav ul li a.active {
     transition: transform 0.3s ease; /* Transition au survol */
 }
 
+
+
+/* Effet au survol */
 .article:hover {
     transform: translateY(-5px); /* Animation de léger déplacement au survol */
 }
@@ -123,6 +124,14 @@ nav ul li a.active {
     margin-bottom: 20px;
 }
 
+/* Pour aligner les deux articles suivants en dessous */
+.article:nth-child(n+4) {
+    grid-column: span 2; /* Les deux articles suivants vont occuper deux colonnes */
+}
+
+
+
+
 /* Style des boutons */
 .btn {
     display: inline-block;
@@ -141,8 +150,10 @@ nav ul li a.active {
 /* Style de l'article en vedette */
 
 .featured-article {
-    background-color: #d4acac; /* Couleur de fond */
-    color: #100d0d; /* Couleur du texte */
+    /*background-color: #d4acac;  Couleur de fond */
+    background-image: url(images/fraisebio.jpg);
+    background-size: cover;
+    color: #eee6e6; /* Couleur du texte */
     padding: 55px;
     margin: 25px;
     text-align: center;
