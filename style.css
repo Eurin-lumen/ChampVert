@@ -1,13 +1,14 @@
 /* Style général */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Utilisation d'une police plus moderne */
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4; /* Couleur de fond légèrement grise */
 }
 
 /* Style de l'en-tête */
 header {
-    background-color: #333; /* Couleur de fond */
+    background-color: #007bff; /* Couleur de fond bleue */
     color: #fff; /* Couleur du texte */
     padding: 20px;
 }
@@ -20,6 +21,7 @@ header {
 
 .header-content h1 {
     margin: 0;
+    font-size: 24px; /* Taille de police légèrement augmentée */
 }
 
 nav ul {
@@ -30,22 +32,29 @@ nav ul {
 
 nav ul li {
     display: inline;
+    margin-right: 10px; /* Espacement entre les éléments du menu */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Pas de marge à droite pour le dernier élément */
 }
 
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    padding: 10px;
+    padding: 10px 15px; /* Espacement intérieur ajusté */
+    border-radius: 5px; /* Coins arrondis pour les liens */
     transition: background-color 0.3s ease; /* Transition au survol */
 }
 
 nav ul li a:hover {
-    background-color: #555; /* Couleur de fond au survol */
+    background-color: #0056b3; /* Couleur de fond plus foncée au survol */
 }
 
 nav ul li a.active {
     border-bottom: 2px solid #fff; /* Bordure en bas pour l'élément actif */
 }
+
 /* Style de la bannière */
 .hero {
     background-image: url('images/hero-bg1.jpg');
